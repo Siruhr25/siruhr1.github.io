@@ -1,0 +1,71 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("./assets/AdobeStock_141951442.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*dfsd*/
+
+.glow {
+  font-size: 80px;
+  background-color: red;
+
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #f01111, 0 0 20px #e20c0c, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #e00b0b, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.button {
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 75%;
+  left: 68%;
+
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-decoration: dotted;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: #f7f4f4;
+}
+
+.button:hover {
+  background-color: #b92929;
+}
+
+.figure {
+  border-radius: 5px;
+  padding-left: 200px;
+  padding-top: 220px;
+  display: block;
+  opacity: 70%;
+}
